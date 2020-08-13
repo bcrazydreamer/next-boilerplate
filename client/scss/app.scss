@@ -1,0 +1,77 @@
+* {
+  outline   : none;
+  box-sizing: border-box;
+
+  :focus {
+    outline: none;
+  }
+}
+
+html,
+body {
+  margin     : 0;
+  font-family: $ff-OpenSans;
+}
+
+:root {
+  --ff-OpenSans   : #{$ff-OpenSans};
+  --ff-sans-serif : #{$ff-sans-serif};
+}
+
+//----no select class----//
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select  : none;
+  -khtml-user-select   : none;
+  -moz-user-select     : none;
+  -ms-user-select      : none;
+  user-select          : none;
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select  : none;
+  -khtml-user-select   : none;
+  -moz-user-select     : none;
+  -ms-user-select      : none;
+  user-select          : none;
+}
+
+//----center----//
+.center {
+  display   : block;
+  text-align: -webkit-center;
+}
+
+.center-all {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+@mixin center-all {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+@mixin center {
+  display   : block;
+  text-align: -webkit-center;
+}
+
+.common-main-ctnr {
+  padding: 0 120px;
+
+  @include media-below(lg) {
+    padding: 0 80px;
+  }
+
+  @include media-below(md) {
+    padding: 0 40px;
+  }
+
+  @include media-below(ml) {
+    padding: 0 20px;
+  }
+}

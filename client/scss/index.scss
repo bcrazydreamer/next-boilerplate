@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "color-emoji";
+  src        : local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import './variables';
+@import './custom-bootstrap';
+@import './mixins';
+@import './app';
+@import './common.scss';
+
+//----Custom----//
+@import './style';

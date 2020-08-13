@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+
+$theme-colors: ("primary": $sk-primary);
+
+$grid-breakpoints: $sk-bt-breakpoint;
+
+//----Typography----//
+$h1-font-size          : 2rem;
+$h2-font-size          : 1.5rem;
+$h3-font-size          : 1.17rem;
+$h4-font-size          : 1rem;
+$h5-font-size          : .83rem;
+$h6-font-size          : .67rem;
+$headings-margin-bottom: 0.5rem;
+$headings-font-weight  : bold;
+
+@import '~bootstrap/scss/bootstrap';
